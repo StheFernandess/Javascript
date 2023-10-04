@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Java Script</title>
+
+	<script>
+
+	var objetos = Array ('Cadeira','Impressora','Garfo')
+	var text = document.getElementById ('texto')	
+	var novoArray = [].concat(objetos, text)
+
+	function adiciona() {
+
+		var inputName = document.getElementById ('texto')
+		text = inputName.value
+
+		var objetos = Array ('Cadeira','Impressora','Garfo')
+		var novoArray = [].concat(objetos, text)
+
+		if (text === '') {
+
+			alert('Informe um valor válido')
+
+		} else if (text === 'Cadeira' || text === 'Impressora' || text === 'Garfo') {
+			alert('Objeto já foi adicionado')
+
+		}
+		console.log(novoArray)
+	}
+
+	function ordena(a, b) {
+
+		let inputName = document.getElementById ('texto')
+		let text = inputName.value
+		
+		let objetos = Array ('Cadeira','Impressora','Garfo')
+		let novoArray = [].concat(objetos, text)
+
+		console.log(novoArray.sort())
+
+		return (a - b)
+	}
+
+	</script>
+		
+
+	</head>
+
+	<body>
+		<div id="caixa">
+
+			<input type="text" id="texto" class="caixa">
+			<button onmouseup="adiciona()">Adicionar</button>
+			
+			<button onmouseup="ordena()">Ordenar</button>
+		</div>
+	</body>
+</html> 

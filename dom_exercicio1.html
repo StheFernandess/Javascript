@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Java Script</title>
+
+	<style>
+		.estilo1 {
+			background-color: yellow;
+		}
+
+		.estilo2 {
+			background-color: white;
+		}
+
+		.estilo3 {
+			background-color: red;
+		}
+
+		.estilo4 {
+			background-color: green;
+		}
+
+	</style>
+
+	<script>
+		function alteraInput() {
+
+			var inputName = document.getElementById('texto').className = 'estilo1'
+		}
+
+		function recupera() {
+
+			document.getElementById('texto').className = 'estilo2'
+
+		}	
+		
+		 function conteudo() {
+
+			var inputName = document.getElementById('texto')
+
+			Name = inputName.value
+
+			//length = document.getElementById('texto')
+			
+			if(Name.length < 3){
+				document.getElementById('texto').className = 'estilo3'
+			}
+			else{
+				document.getElementById('texto').className = 'estilo4'
+			}
+		}
+
+		
+
+		
+
+		/*var inputName = document.getElementById("texto")
+
+			inputName.onblur = function(){
+				Name = inputName.value
+				if(Name.length >= 3){
+				InputName.style.backgroundColor = "green";
+				}
+				else{
+				InputName.style.backgroundColor = "red";
+				}
+			}
+		*/
+		
+
+
+
+	</script>
+
+	</head>
+
+	<body>
+
+		<input type="text"
+		placeholder="Digite um caracter aqui"
+		onfocus="alteraInput()"
+		onmouseout="recupera()"
+		onkeypress="conteudo()"
+		name="fname"
+		id="texto"
+		/>
+
+	</body>
+
+</html>

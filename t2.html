@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IMC</title>
+
+	<script>
+		var nome = prompt('Digite seu nome');
+		var altura = prompt('Digite sua altura');
+		var peso = prompt('Digite seu peso');
+
+		altura = parseFloat(altura);
+		peso = parseFloat(peso);
+
+		altura /= 100;
+
+		var m = peso / (altura * altura);
+		console.log(m);
+
+		var BaixoPesoMuitoGrave = (m < 16);
+		var BaixoPesoGrave = (m >= 16 && m < 16.99);
+		var BaixoPeso = (m >= 17 && m < 18.49);
+		var PesoNormal = (m >= 18.50 && m < 24.99);
+		var Sobrepeso = (m >= 25 && m < 29.99);
+		var ObesidadeGrauI = (m >= 30 && m < 34.99);
+		var ObesidadeGrauII = (m >= 35 && m < 39.99);
+		var ObesidadeGrauIII = (m >= 40);
+
+		if (BaixoPesoMuitoGrave) {
+			document.write(nome + ' possui índice de massa corporal igual ' + m + ', sendo classificado como: Baixo Peso Muito Grave<br/>');
+		} else if (BaixoPesoGrave) {
+			document.write(nome + ' possui índice de massa corporal igual ' + m + ', sendo classificado como: Baixo Peso Grave<br/>');
+		} else if (BaixoPeso) {
+			document.write(nome + ' possui índice de massa corporal igual ' + m + ', sendo classificado como: Baixo Peso<br/>');
+		} else if (PesoNormal) {
+			document.write(nome + ' possui índice de massa corporal igual ' + m + ', sendo classificado como: Peso Normal<br/>');
+		} else if (Sobrepeso) {
+			document.write(nome + ' possui índice de massa corporal igual ' + m + ', sendo classificado como: Sobrepeso<br/>');
+		} else if (ObesidadeGrauI) {
+			document.write(nome + ' possui índice de massa corporal igual ' + m + ', sendo classificado como: Obesidade Grau I<br/>');
+		} else if (ObesidadeGrauII) {
+			document.write(nome + ' possui índice de massa corporal igual ' + m + ', sendo classificado como: Obesidade Grau II<br/>');
+		} else {
+			document.write(nome + ' possui índice de massa corporal igual ' + m + ', sendo classificado como: Obesidade Grau III<br/>');
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>

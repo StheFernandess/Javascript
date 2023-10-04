@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soma e Subtração</title>
+  </head>
+
+<body>
+  <header>
+    <h1>Soma ou Subtração:</h1>
+  </header>
+  <section>
+    <div>
+      <p>Digite um número:
+        <input type="number" name="txtn1" id="txtn1" min="0" </p>
+      <p>Digite outro número:
+        <input type="number" name="txtn2" id="txtn2" min="0" </p>
+      <p>Escolha uma opção:
+        <input type="radio" name="radnum" id="som" <label for="som">Soma</label>
+        <input type="radio" name="radnum" id="sub" <label for="sub">Subtração</label>
+      </p>
+      <p>
+        <input type="button" value="Confirma" onclick="resultado()" 1 .addEventListener ("click", resultado)</p>
+    </div>
+
+    <div id="res">
+      Preencha os dados acima para ver o resultado!
+
+    </div>
+
+  </section>
+  <footer>
+    <p>&copy;Lucas e Sthe</p>
+  </footer>
+
+  <script>
+
+	txtn1 = parseInt(txtn1)
+	txtn2 = parseInt(txtn2)
+
+  var num1 = document.getElementById('txtn1')
+  var num2 = document.getElementById('txtn2')
+  var res = document.getElementById('res')
+
+  var calculo1 = txtn1 + txtn2
+	var calculo2 = txtn1 - txtn2
+  
+	
+
+	/*
+	element.addEventListener("click", myFunction);
+
+	function myFunction() {
+  	document.getElementById("demo").innerHTML = "Hello World";
+}
+*/
+
+	var calculo1 = txtn1 + txtn2
+	var calculo2 = txtn1 - txtn2
+    
+	function resultado (txtn1, txtn2, som, sub) {
+		
+		switch (parseInt(som)) {
+
+		case 1: 
+		document.write(`A soma entre ${txtn1} e ${txtn2} é: ${calculo1}`)
+		break
+
+		default:
+		document.write(`A subtração entre ${txtn1} e ${txtn2} é: ${calculo2}`)
+	}
+}
+
+
+  </script>
+
+
+</body>
+
+</html>

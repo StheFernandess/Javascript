@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>JavaScript</title>
+
+	<script>
+		//forEach() só pra valores numéricos senão ele desconsidera a posição do array
+
+		var listaFuncionarios = Array()
+
+		listaFuncionarios['x'] = 'Sthe'
+		listaFuncionarios[false] = 'Claudia'
+		listaFuncionarios[3] = 'Jose'
+		listaFuncionarios[77] = 'Fabio'
+		listaFuncionarios[-12] = 'Miguel'
+
+		var f = function(valor,indice) {
+		console.log(valor, indice)
+		}
+		listaFuncionarios.forEach(f)
+
+
+
+
+	/*var listaFuncionarios = ['Thiago','Nicolas', 'Sthe', 'Maria','Ana']
+	
+	var f = function(valor,indice) {
+		console.log(valor, indice)
+	}
+	listaFuncionarios.forEach(f)
+	//listaCoisas.forEach(f)*/
+
+	
+	/*listaFuncionarios.forEach(function(valor, indice) {
+		console.log(valor, indice)
+	})*/
+
+//////////////////////////////////////////////////////
+
+	/*
+	var listaFuncionarios = ['Thiago','Nicolas', 'Sthe', 'Maria','Ana']
+	console.log(listaFuncionarios)
+	document.write(listaFuncionarios[3])
+
+	listaFuncionarios.forEach(function(valor, indice, array) {
+	//logica
+	console.log('indice ' + indice + ' | valor: ' + valor)
+
+		if(valor =='Maria') {
+			array[indice] = 'um novo valor'
+		}
+
+	})
+
+	console.log(listaFuncionarios)
+	document.write('<br />' + listaFuncionarios[3])
+	*/
+
+	</script>
+	
+ </head>
+ <body>
+
+ </body>
+</html>

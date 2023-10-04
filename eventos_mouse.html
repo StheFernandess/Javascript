@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Java Script</title>
+
+	<script>
+
+		function acao() {
+		alert('Evento disparado')
+		}
+
+		function acao2() {
+		alert('Evento disparado2')
+		}
+
+		function acao3() {
+		alert('Evento disparado3')
+		}
+
+		function acao4() {
+		alert('Evento disparado4')
+		}
+
+		function acao5() {
+		alert('Evento disparado5')
+		}
+
+
+	</script>
+
+</head>
+
+
+<body>
+	
+	<div onclick="acao()" style ="background: #1e44ee; height: 150px; width: 150px"></div>
+
+	<br>
+
+	<div ondblclick="acao2()" style ="background: #1eee63; height: 150px; width: 150px"></div>
+
+	<br>
+
+	<div onmouseup="acao3()" style ="background: #e72daf; height: 150px; width: 150px"></div>
+
+	<br>
+
+	<div onmouseover="acao4()" style ="background: #fa6108; height: 150px; width: 150px"></div>
+
+	<br>
+
+	<div onmouseout="acao5()" onclick="acao()" style ="background: #2fee1e; height: 150px; width: 150px"></div>
+
+</body>
+</html>

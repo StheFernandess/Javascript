@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Soma e Subtração</title>
+
+	<script>
+
+
+
+
+
+	var num1 = Number(prompt('Digite um número'))
+	var num2 = Number(prompt('Digite outro número'))
+	var operacao = prompt('Digite a operação desejada: (ex: Soma ou Subtração)')
+
+	num1 = parseInt(num1)
+	num2 = parseInt(num2)
+
+
+
+//
+
+	function calculo ( soma, subtracao ) {
+
+		var subtracao = 'Subtração'
+		var soma = 'Soma'
+
+		
+		
+		switch (parseInt(operacao)) {
+
+		case 1: soma
+			document.write('A Soma entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 + num2) + '<br/>')
+			break
+
+		case 2 : subtracao
+		document.write('A Subtração entre ' + num1 + ' e ' + num2 + ' é: ' + (subtracao) + '<br/>')
+			break
+
+		default:
+			document.write('Erro')
+		}
+	
+		return calculo
+	}
+
+
+/*
+
+		if (soma) {
+
+		document.write('A Soma entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 + num2) + '<br/>')
+
+		} 
+
+		else {
+		document.write('A Subtração entre ' + num1 + ' e ' + num2 + ' é: ' + (subtracao) + '<br/>')
+		}
+*/
+
+		
+
+	</script>
+
+</head>
+
+
+<body>
+	
+
+
+
+</body>
+</html>
